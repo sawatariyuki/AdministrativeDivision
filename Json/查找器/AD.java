@@ -1,6 +1,5 @@
-package com.cocresoft.cccs.test.test;
-
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 class AD implements Serializable {
@@ -8,7 +7,7 @@ class AD implements Serializable {
 	private String code;
 	private String name;
 	private String url;
-	private List<AD> children;
+	private List<AD> children = new ArrayList<AD>();
 
 	public String getCode() {
 		return code;
@@ -44,7 +43,7 @@ class AD implements Serializable {
 
 	@Override
 	public String toString() {
-		return this.code + " " + this.name;
+		return this.code + " " + this.name + (this.url != null ? " " + this.url : "");
 	}
 
 	public AD getSelf() {

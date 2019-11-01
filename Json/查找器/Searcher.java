@@ -1,5 +1,3 @@
-package com.cocresoft.cccs.test.test;
-
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
@@ -16,8 +14,12 @@ import com.google.gson.Gson;
 class Searcher {
 	private AD ad;
 
-	public Searcher() {
-		String json = readFile("C://json/data_15726038.json");
+	public Searcher(String fileName) {
+		if (fileName == null) {
+			ad = new AD();
+			return;
+		}
+		String json = readFile(fileName);
 		Gson gson = new Gson();
 		ad = gson.fromJson(json, AD.class);
 	}
