@@ -1,5 +1,5 @@
 # AdministrativeDivision
 
-Spiders: spider
+Spiders: spider, test
 
-start with ```scrapy crawl spider -o data.json -s LOG_FILE=log.log```
+start with ```scrapy crawl spider -o data.json```
