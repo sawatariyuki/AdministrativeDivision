@@ -1,0 +1,15 @@
+.DS_Store
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+node_modules
+coverage
+.idea
+dist
+.nyc_output
+*.rar
+json/*.png
