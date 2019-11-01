@@ -1,10 +1,8 @@
 import java.util.List;
 
-import com.cocresoft.commons.el.ELException;
-
 public class TestTest {
 
-	public static void main(String[] args) throws ELException {
+	public static void main(String[] args) {
 		Searcher searcher = new Searcher("C://json/data_15726038.json");
 		List<AD> ads;
 //		System.out.println("总数为: " + searcher.totalNum());
